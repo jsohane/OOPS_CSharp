@@ -70,5 +70,7 @@ public class BankAccount
 
     return report.ToString();
 }
+//The below code shows how you use the virtual keyword to declare a method in the base class that a derived class may provide a different implementation for. A virtual method is a method where any derived class may choose to reimplement. The derived classes use the override keyword to define the new implementation. Typically you refer to this as "overriding the base class implementation". The virtual keyword specifies that derived classes may override the behavior. You can also declare abstract methods where derived classes must override the behavior. The base class does not provide an implementation for an abstract method.
+public virtual void PerformMonthEndTransactions(){}
 
 }
